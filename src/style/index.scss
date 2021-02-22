@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Open+Sans&display=swap");
+@import "./variable";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  color: $lightGray;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}

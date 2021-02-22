@@ -1,0 +1,45 @@
+$black: #170d13;
+$purple: #2e2a5b;
+$darkenPurple: #47294e;
+$burgunday: #491d28;
+$darkenGray: #57545d;
+$mole: #68638d;
+$lightGray: #d5d3d1;
+$gradientBackground: radial-gradient(
+  circle,
+  #2e2a5b,
+  #3c2551,
+  #452147,
+  #4a1e3d,
+  #4b1d33,
+  #461c2e,
+  #411b29,
+  #3c1a25,
+  #321722,
+  #28151d,
+  #1f1219,
+  #170d13
+);
+$gradientBtn: linear-gradient(to right, #68638d, #595480, #4b4674, #3c3867, #2e2a5b);
+
+/* Breakpoint for media query */
+$mobileScreen: 320px;
+$tabletScreen: 481px;
+$laptopScreen: 769px;
+
+@mixin mobile-screen {
+  @media (min-width: #{$mobileScreen}) and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet-screen {
+  @media (min-width: #{$tabletScreen}) and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop-screen {
+  @media (min-width: #{$laptopScreen}) {
+    @content;
+  }
+}

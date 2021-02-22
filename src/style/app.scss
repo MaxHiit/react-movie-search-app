@@ -1,0 +1,15 @@
+@import "./variable";
+
+.app {
+  //   background: red;
+  background: $gradientBackground;
+  height: auto;
+  min-height: 100vh;
+
+  &_container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    //  border: 2px solid yellow;
+  }
+}

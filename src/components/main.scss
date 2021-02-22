@@ -1,0 +1,42 @@
+@import "../style/variable";
+
+.main {
+  margin-top: 5rem;
+  position: relative;
+
+  .main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .movie-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .page-btn {
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+        border: none;
+        background: $gradientBtn;
+        cursor: pointer;
+        color: $lightGray;
+
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 1px 1px 5px 1px $black;
+        }
+        &:nth-child(1) {
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-gap: 2rem 5rem;
+      padding: 2rem 0;
+      overflow: auto;
+    }
+  }
+}
